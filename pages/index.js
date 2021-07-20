@@ -67,6 +67,7 @@ export default function Home({ data }) {
             <h2>List of Characters</h2>
             <p>Total Characters: {items.pokemon.count}</p>
           </div>
+          <p>Click on a your favorite character to view their profile.</p>
             <ul>
           {
             !items.pokemon ? items.loading : items.pokemon.results.map((item, index) => <li key={index} className={styles.charList} onClick={() => {
