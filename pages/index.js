@@ -71,7 +71,7 @@ export default function Home({ data }) {
           {
             !items.pokemon ? items.loading : items.pokemon.results.map((item, index) => <li key={index} className={styles.charList} onClick={() => {
               setPokemon({...items, loading: true})
-              router.push(`/pokemon/${index + 1}`)
+              router.push(`/pokemon/${item.name}`)
             }}>{item.name}</li>)
           }
             </ul>
