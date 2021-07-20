@@ -65,7 +65,7 @@ export default function Home({ data }) {
         <div className={styles.grid}>
           <div className={styles.details}>
             <h2>List of Characters</h2>
-            <p>Total Characters: {items.pokemon.count}</p>
+            <p>Total: {items.pokemon.count}</p>
           </div>
           <p>Click on a your favorite character to view their profile.</p>
             <ul>
